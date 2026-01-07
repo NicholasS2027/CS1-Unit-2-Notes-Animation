@@ -1,1 +1,40 @@
+.box {
+    background-color: red;
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+/* The TRANSFORM property uses functional values like f(x) to change an element */
+
+/* adding a negative can turn the shape in the opposite direction */
+#rotate {
+    transform:rotate(-10deg);
+}
+
+/* when you scale something, the number that is put in the () is not adding it, it is mulltiplying it */
+
+/* when you want to make the scale smaller, it is a number between 0-1, and to make it bigger, it is a number between 1-9 */
+
+#scale {
+    transform: scale(.7);   
+}
+
+#skew {
+    transform: skew(-15deg);
+}
+/* translate(x) moves along x axis, translate(x,y) moves diagonally, translate(0,Y) moves along Y only */
+#translate {
+    transform: translate(110px, 30px);
+}
+
+/* to apply MULTIPLE TRANSFORMS to the same element, you chain the functions in the same line of code */
+#chain {
+    transform: rotate(280deg) scaleX(.90) skew(30deg);
+}
+
+#three-d {
+    transform: perspective(100px) translate(30px);
+}
 
